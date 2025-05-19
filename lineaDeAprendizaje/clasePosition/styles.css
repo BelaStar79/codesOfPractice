@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box {
+    padding: 10px;
+    border: 1px solid aqua;
+    border-radius: 20px;
+}
+
+#one {
+    width: 20%;
+    position: absolute;
+    top: 5%;
+    left: calc(50% - 10%);
+    background-color: aqua;
+}
+
+#two {
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    padding-top: 40px;
+}
+
+#two p {
+    text-align: justify;
+}

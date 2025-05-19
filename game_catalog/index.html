@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games PS2</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="bigContainer">
+        <div class="titlebox">
+            <h1 class="title">Juegos de PlayStation 2</h1>
+        </div>
+
+        <div class="searchbox">
+            <form action="" class="searchbox__form">
+                <label for="">
+                    <input type="text" id="search-input" placeholder="Buscar..." />
+                </label>
+                <div class="filter">
+                    <select id="genre-filter" class="filter-select">
+                        <option value="">Género</option>
+                        <option value="Plataformas">Plataformas</option>
+                        <option value="Estrategia">Estrategia</option>
+                        <option value="Carreras">Carreras</option>
+                        <option value="Acción">Acción</option>
+                        <option value="Shooter">Shooter</option>
+                    </select>
+                    <select id="language-filter" class="filter-select">
+                        <option value="">Idioma</option>
+                        <option value="Español">Español</option>
+                        <option value="Inglés">Inglés</option>
+                        <option value="Francés">Francés</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="gamesbox" id="gamesbox"></div>
+        <div class="no-results" id="no-results" style="display: none;">No se encuentran resultados</div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content" id="popup-content">
+            <img id="popup-image" src="" alt="" />
+            <div class="popup-details" id="popup-details">
+                <h2 id="popup-title"></h2>
+                <p><strong>Género:</strong> <span id="popup-genre"></span></p>
+                <p><strong>Formato:</strong> <span id="popup-format"></span></p>
+                <p><strong>Idioma:</strong> <span id="popup-language"></span></p>
+                <p><strong>Peso:</strong> <span id="popup-weight"></span></p>
+                <p><strong>Descripción:</strong></p>
+                <p id="popup-description"></p>
+                <div class="close-btn-container">
+                    <button class="close-btn" id="close-btn">Cerrar</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <hr class="separator">
+
+        <div class="infobox">
+            <div class="rightbox">
+            <p><strong>Nombre:</strong> Tu Nombre</p>
+            <p><strong>Teléfono:</strong> (123) 456-7890</p>
+            <p><strong>Dirección:</strong> Calle Ejemplo, 123, Ciudad</p>
+        </div>
+
+        <div class="leftbox">
+            <p><strong>Horario:</strong></p>
+            <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+            <p>Sábado y Domingo: 10:00 AM - 4:00 PM</p>
+        </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
